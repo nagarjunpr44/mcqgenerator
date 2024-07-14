@@ -2,7 +2,6 @@ Metadata-Version: 2.1
 Name: mcqgenrator
 Version: 0.0.1
 Author: Nagarjun
-Author-email: 
 Requires-Dist: openai
 Requires-Dist: langchain
 Requires-Dist: streamlit

@@ -1,16 +1,11 @@
 import os
-import sys
 import json
 import traceback
 import pandas as pd
+from dotenv import load_dotenv
+from mcqgenrator.utils import read_file,get_table_data
 import streamlit as st
 from langchain.callbacks import get_openai_callback
-from dotenv import load_dotenv
-
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'src')))
- 
-
-from mcqgenrator.utils import read_file,get_table_data
 from mcqgenrator.MCQGenrator import generate_evaluate_chain
 from mcqgenrator.logger import logging
 
